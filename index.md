@@ -2,11 +2,12 @@
 
 
 
-Radial brake dampens the radial component of the update vector, in my experiments by a factor `OUTWARD_SCALE_FACTOR = 0.5`. Another correction is applied, normalizing to 
+Radial brake dampens the radial component of the update vector, in my experiments by a factor `OUTWARD_SCALE_FACTOR = 0.5`. The cleanest definition is as follows. Apply the usual update `w := w_prev+dw` to the weights. Then re-scale `w` to `w_brake` such that 
 
-`norm = prev_norm + OUTWARD_SCALE_FACTOR * OUTWARD_COMPONENT_LENGTH`,
+`||w_brake|| = ||w_prev|| + OUTWARD_SCALE_FACTOR * (||w||-||w_prev||)`,
 
-to adjust for outward drift from following tangent directions in a straight line. The procedure is related to [AdamP](https://arxiv.org/abs/2006.08217) (roughly `OUTWARD_SCALE_FACTOR = 0`) and [hyperball](https://arxiv.org/abs/2010.02916), roughly (`OUTWARD_SCALE_FACTOR = INWARD_SCALE_FACTOR = 0`).
+if `||w||>||W_prev||`. otherwise `OUTWARD_SCALE_FACTOR` is replaced by `INWARD_SCALE_FACTOR`.
+The procedure is related to [AdamP](https://arxiv.org/abs/2006.08217) (roughly `OUTWARD_SCALE_FACTOR = 0`) and [hyperball](https://arxiv.org/abs/2010.02916), roughly (`OUTWARD_SCALE_FACTOR = INWARD_SCALE_FACTOR = 0`).
 
 
 ![Radial brake dampens the radial component of the update vector. Not shown: 2nd order correction.](assets/radial_brake_drawing.jpg)

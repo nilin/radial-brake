@@ -10,7 +10,7 @@ The cleanest definition is as follows. Apply the usual update `w := w_prev+dw` t
 
 `||w_brake|| = ||w_prev|| + OUTWARD_SCALE_FACTOR * (||w||-||w_prev||)`,
 
-if `||w||>||W_prev||`. otherwise `OUTWARD_SCALE_FACTOR` is replaced by `INWARD_SCALE_FACTOR`.
+if `||w||>||w_prev||`. Wtherwise `OUTWARD_SCALE_FACTOR` is replaced by `INWARD_SCALE_FACTOR`.
 The procedure is related to [AdamP](https://arxiv.org/abs/2006.08217) (roughly `OUTWARD_SCALE_FACTOR = 0`) and [hyperball](https://arxiv.org/abs/2010.02916), roughly (`OUTWARD_SCALE_FACTOR = INWARD_SCALE_FACTOR = 0`).
 
 

@@ -4,7 +4,7 @@ A comparison of radial update damping, explicit weight decay, and no radial cons
 
 ![Radial brake dampens the radial component of the update vector. Not shown: 2nd order correction.](assets/radial_brake_drawing.jpg)
 
-Radial brake dampens the radial component of the update vector, in my experiments by a factor 0.5. Another correction is applied, normalizing to 
+Radial brake dampens the radial component of the update vector, in my experiments by a factor `OUTWARD_SCALE_FACTOR = 0.5`. Another correction is applied, normalizing to 
 
 `norm = prev_norm + OUTWARD_SCALE_FACTOR * OUTWARD_COMPONENT_LENGTH`,
 

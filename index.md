@@ -29,7 +29,9 @@ The plots below are based on [PrimeIntellect's](https://www.primeintellect.ai/) 
 
 Median per-tensor dimension-normalized Frobenius RMS. 
 
-## Condition Proxy
+## Condition number proxy
+
+We use a robust proxy for the condition number based on the Schatten 4-norm/2-norm. The Schatten 4-norm estimates works as a rough proxy for the operator norm, and the 2-norm can be viewed as an average of singular values, which is a more robust alternative to the smallest singular value. 
 
 ![Line plot of estimated condition proxy q100 over training steps for the three radial brake comparison runs.](assets/s4_condition_proxy_q100.png)
 

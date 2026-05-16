@@ -14,7 +14,7 @@ to adjust for outward drift from following tangent directions in a straight line
 
 ## Experimental Setting
 
-The plots below are based on [PR300](https://github.com/KellerJordan/modded-nanogpt/pull/300) from the [modded nanogpt track 3](https://github.com/KellerJordan/modded-nanogpt/tree/master/records/track_3_optimization). This is [PrimeIntellect's](https://www.primeintellect.ai/) autoresearch PR which inherits from my 2990-step record which introduces the radial brake.
+The plots below are based on [PrimeIntellect's](https://www.primeintellect.ai/) 2930-step autoresearch record [PR300](https://github.com/KellerJordan/modded-nanogpt/pull/300) from the [modded nanogpt track 3](https://github.com/KellerJordan/modded-nanogpt/tree/master/records/track_3_optimization). This record inherits from my 2990-step record PR294 which introduced the radial brake.
 
 ## Weight Norms
 

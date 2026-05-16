@@ -10,12 +10,14 @@ if `||w||>||W_prev||`. otherwise `OUTWARD_SCALE_FACTOR` is replaced by `INWARD_S
 The procedure is related to [AdamP](https://arxiv.org/abs/2006.08217) (roughly `OUTWARD_SCALE_FACTOR = 0`) and [hyperball](https://arxiv.org/abs/2010.02916), roughly (`OUTWARD_SCALE_FACTOR = INWARD_SCALE_FACTOR = 0`).
 
 
+The following drawing shows a definition which agrees to first order.
+
 ![Radial brake dampens the radial component of the update vector. Not shown: 2nd order correction.](assets/radial_brake_drawing.jpg)
 
 
 ## Experimental Setting
 
-The plots below are based on [PrimeIntellect's](https://www.primeintellect.ai/) 2930-step autoresearch record [PR300](https://github.com/KellerJordan/modded-nanogpt/pull/300) from the [modded nanogpt track 3](https://github.com/KellerJordan/modded-nanogpt/tree/master/records/track_3_optimization). This record inherits from my 2990-step record PR294 where I introduced the radial brake.
+The plots below are based on [PrimeIntellect's](https://www.primeintellect.ai/) 2930-step autoresearch record [PR300](https://github.com/KellerJordan/modded-nanogpt/pull/300) from the [modded nanogpt track 3](https://github.com/KellerJordan/modded-nanogpt/tree/master/records/track_3_optimization). This record inherits from my 2990-step record PR294 where I introduced the radial brake. The implementation in these experiments differs slightly but agrees to first order and should not give materially different results.
 
 ## Weight Norms
 

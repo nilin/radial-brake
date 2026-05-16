@@ -6,7 +6,7 @@ Radial brake dampens the radial component of the update vector, in my experiment
 
 ### Simplest definition
 
-The cleanest definition is as follows. Apply the usual update `w := w_prev+dw` to the weights. Then re-scale `w` to `w_brake` such that 
+The cleanest definition is as follows. Apply the usual gradient update `w := w_prev + dw` to the weights. Then re-scale `w` to `w_brake` such that 
 
 `||w_brake|| = ||w_prev|| + OUTWARD_SCALE_FACTOR * (||w||-||w_prev||)`,
 

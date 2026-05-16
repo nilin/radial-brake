@@ -14,9 +14,11 @@ if `||w||>||w_prev||`. Wtherwise `OUTWARD_SCALE_FACTOR` is replaced by `INWARD_S
 The procedure is related to [AdamP](https://arxiv.org/abs/2006.08217) (roughly `OUTWARD_SCALE_FACTOR = 0`) and [hyperball](https://arxiv.org/abs/2010.02916), roughly (`OUTWARD_SCALE_FACTOR = INWARD_SCALE_FACTOR = 0`).
 
 
-The following drawing shows a definition which agrees to first order.
+The two views below show the direct norm-rescale definition and the first-order radial-component picture.
 
-![Radial brake dampens the radial component of the update vector. Not shown: 2nd order correction.](assets/radial_brake_drawing.jpg)
+| Clean norm-rescale definition | First-order radial update view |
+| --- | --- |
+| ![Clean radial brake definition: apply the update, then rescale to an interpolated radius.](assets/radial_brake_clean_definition.jpeg) | ![Radial brake dampens the radial component of the update vector. Not shown: 2nd order correction.](assets/radial_brake_drawing.jpg) |
 
 
 ## Experimental Setting

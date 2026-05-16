@@ -10,6 +10,8 @@ Radial brake dampens the radial component of the update vector, in my experiment
 
 to adjust for outward drift from following tangent directions in a straight line. The procedure is related to [AdamP](https://arxiv.org/abs/2006.08217) (roughly `OUTWARD_SCALE_FACTOR = 0`) and [hyperball](https://arxiv.org/abs/2010.02916), roughly (`OUTWARD_SCALE_FACTOR = INWARD_SCALE_FACTOR = 0`).
 
+## Experimental Setting
+
 The plots below are based on [PR300](https://github.com/KellerJordan/modded-nanogpt/pull/300) from the [modded nanogpt track 3](https://github.com/KellerJordan/modded-nanogpt/tree/master/records/track_3_optimization). This is [PrimeIntellect's](https://www.primeintellect.ai/) autoresearch PR which inherits from my 2990-step record which introduces the radial brake.
 
 ## Weight Norms

@@ -14,7 +14,7 @@ if `||w||>||w_prev||`. Wtherwise `OUTWARD_SCALE_FACTOR` is replaced by `INWARD_S
 The procedure is related to [AdamP](https://arxiv.org/abs/2006.08217) (roughly `OUTWARD_SCALE_FACTOR = 0`) and [hyperball](https://arxiv.org/abs/2010.02916), roughly (`OUTWARD_SCALE_FACTOR = INWARD_SCALE_FACTOR = 0`).
 
 
-The two views below show the direct norm-rescale definition and the first-order radial-component picture.
+The left picture below shows the direct norm-rescale definition described above. The picture on the right shows first-order radial-component picture which was used in the experiments below.
 
 | Clean norm-rescale definition | First-order radial update view |
 | --- | --- |

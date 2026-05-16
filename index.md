@@ -14,7 +14,7 @@ if `||w||>||w_prev||`. Wtherwise `OUTWARD_SCALE_FACTOR` is replaced by `INWARD_S
 The procedure is related to [AdamP](https://arxiv.org/abs/2006.08217) (roughly `OUTWARD_SCALE_FACTOR = 0`) and [hyperball](https://arxiv.org/abs/2010.02916), roughly (`OUTWARD_SCALE_FACTOR = INWARD_SCALE_FACTOR = 0`).
 
 
-The left picture below shows the direct norm-rescale definition described above. The picture on the right shows first-order radial-component picture which was used in the experiments below. In the experiment this was followed by a correction to adjust for outward drift of tangential movement. I believe the simpler definition on the left captures the same behavior.
+The left picture below shows the direct norm-rescale definition described above. The initial experiment used a decomposition of the gradient like in the picture on the right. This was followed by a correction to adjust for outward drift of tangential movement. I believe the simpler definition on the left captures essentially the same behavior, although there is a 2nd order difference between the 2.
 
 | Clean norm-rescale definition | First-order radial update view |
 | --- | --- |
